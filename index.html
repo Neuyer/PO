@@ -18,7 +18,7 @@
 			<div id="clogo">
 				<h1> Arapuka gastrobar</h1>
 			</div>
-			<nav>
+			<nav id="nav">
 				<ul>
 					<li> <a class="scrollSuave" href="#clogo">HOME</a> </li>
 
@@ -212,9 +212,7 @@
 
   	</footer>
 		<script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.5" async></script>
-				<div id="gotops" class="gotop"></div>
-				<a  href="#clogo" id="gotop" class="gotop scrollSuave"><img style="height:70px; width:70px;" src="images/logo1.png" alt="logotipo arapuka"></a><br>
-		<script>
+			<script>
 					var slideIndex = 0;
 			showSlides();
 
@@ -248,14 +246,14 @@
 				var scroll = $(window).scrollTop();
 					// o valor 400 é a altura do scroll para iniciar o efeito
 					if (scroll > 400) {
-					$(".gotop").css("display","block");
+					$("#nav").addClass("gotop");
 					  }
 					});
 				$(window).on('scroll', function(){
 				var scroll = $(window).scrollTop();
 					// o valor 400 é a altura do scroll para iniciar o efeito
-					if (scroll < 400) {
-					$(".gotop").css("display","none");
+					if (scroll < 400 || scroll > 3200 ) {
+					$("#nav").removeClass("gotop");
 					  }
 					});
 
