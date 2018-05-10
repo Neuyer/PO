@@ -1,35 +1,70 @@
 
 	@import url('https://fonts.googleapis.com/css?family=Poppins|Skranji|Source+Sans+Pro');
-		
+
 		body{
 			margin: 0 auto;
 			background-color: rgba(153,131,93,1);
+			font-size: 100%;
 			font-family: 'Skranji', cursive;
 			color: rgba(153,131,93,1);
 			padding:0;
 			height: 3000px;
-			
-			
+
+
 		}
 		img{
 			margin:0;
 		}
-	
-		header, footer{	
+
+		header,footer{
 			background-color: rgb(226,221,213);
 			width: 100%;
-			margin: 0;	
+			margin: 0;
 			height:154px;
 			padding:0;
 			box-shadow: -5px 5px 5px rgba(0,0,0,0.5);
-			
+
 		}
 		footer{
-			clear: both;
+			clear: left;
 			box-shadow:none;
-			
+			margin-bottom: -19px;
+				height:200px;
+
 		}
-		
+
+		footer .vcard{
+			background-color: none;
+			position: relative;
+			top: 45px;
+			left: 2%;
+			width: 28%;
+			height: auto;
+			padding: 10px 2% ;
+			text-align: left;
+		}
+
+		footer .logo{
+			margin: -60px 0 0 43%;
+			float: left;
+
+		}
+
+		footer #social	{
+				float: right;
+				width: 12%;
+				height: auto;
+				margin-top: -30px;
+				box-sizing: border-box;
+			}
+		#social .hfavicon{
+			height: auto;
+			width: 30%;
+			margin: 0 5% 0 0;
+			background-color: transparent;
+			}
+
+
 		h1{
 			text-indent: -4000px;
 			height: 1px;
@@ -39,60 +74,66 @@
 			float: left;
 			margin: 0;
 		}
-		
+
 		#clogo, .logo{
-			
+
 			background-image: url(../images/logo1.png);
 			background-repeat: no-repeat;
 			margin:5px 0.5%;
 			width: 130px;
 			height: 130px;
-			
-			
+
+
 		}
-		
+
 		nav{
 			float: left;
 			width: 60%;
-			height:50px;	
+			height:50px;
 			margin: 95px 0 0 18%;
 			padding: 0;
-			
-			
+
+
 		}
-		
+
 		.hfavicon{
 			height: 40px;
 			width: 2.9283%;
 			margin: 105px 0 0 0.7320%;
 			float:left;
-		
+
 		}
-		
-		
-			
-		h2,ul{
+
+		h2{
+			margin: 4px 0 0 0;
+			font-size: 1.2rem;
+			background-color: black;
+			width: 100%;
+			text-align: center;
+		}
+
+		ul{
 			color: rgba(153,131,93,1);
 			font-size: 16px;
 			margin:30px 0 0 14%;
-			
+
 		}
-			
+
 		li{
 			display: inline;
 			margin: 0 0 0 2%;
 		}
-		
+
 		li a{
 			padding: 5px;
 			border-radius:  0 10px 0 10px;
 		}
-		
+
 		li a:hover{
 			cursor: pointer;
 			background-color: rgba(255,255,255,0.2);
 		}
-		
+
 		a:hover{
 			cursor: pointer;
 		}
@@ -101,12 +142,12 @@
 		}
 		a{
 			text-decoration: none;
-			font-size: 12px;
+			font-size: 0.75rem;
 			color: rgba(153,131,93,1);
 		}
-		
-		
-		
+
+
+
 		aside{
 			width: 30.015%;
 			height: 609px;
@@ -123,11 +164,11 @@
 			background-color: black;
 			box-shadow: -5px 5px 5px rgba(0,0,0,0.5);
 			padding:0;
-			
-			
-			
+
+
+
 		}
-		
+
 		div img{
 			width: 100%;
 			height:152px;
@@ -139,12 +180,8 @@
 			width: 20%;
 			margin: 0 0 0 10%;
 		}
-		h2{
-			margin: 4px 0 0 3%;
-			color: rgba(153,131,93,1);
-			font-size: 20px;
-		}
-		
+
+
 		section{
 			width:68.7%;
 			height:609px;
@@ -157,21 +194,21 @@
 			background-size: cover;
 			box-shadow: -5px 5px 5px rgba(0,0,0,0.5);
 			box-sizing: border-box;
-			
+
 		}
 		#section_home{
 			width: 99.23%;
 			margin: 5px 0.366%;
 		}
-	
+
 		.slide fade {display: none ;
 			height: 360px;
 			margin:0;
 			padding:0;
 		}
-		
 
-		
+
+
 		#sobre_article{
 			height: 758px;
 			margin-left: 0.367%;
@@ -183,18 +220,17 @@
 			height: 403px;
 			background-color: rgba(0,0,0,0.6);
 			border-radius: 10px;
-			
+
 		}
-		
+
 		article p{
 			color: rgb(226,221,213);
-			font-size: 14px;
+			font-size: 0.80rem;
 			font-family: 'Poppins', sans-serif;
 		}
-		
+
 		section h2{
 			margin: 0;
-			color: rgb(226,221,213);
 		}
 		aside{
 			height: 758px;
@@ -208,7 +244,7 @@
 			box-sizing: border-box;
 			padding:10px 0 0 0;
 		}
-		
+
 		#sobre_aside div{
 			background-color: transparent;
 			box-shadow: none;
@@ -216,7 +252,7 @@
 			width: 100%;
 			padding:5px;
 			margin: 0;
-			
+
 		}
 		.post{
 			margin: 0;
@@ -230,7 +266,7 @@
 			height:70px;
 			width:70px;
 			margin: 0;
-			
+
 		}
 		#gotops{
 			position: fixed;
@@ -244,10 +280,3 @@
 		.gotop{
 			display:none;
 		}
-		
-		
-		
-			
-		
-		
-	
