@@ -1,0 +1,80 @@
+	#article_galeria{
+	height: 758px;
+	margin: 5px 0 5px 0.1%;
+}
+
+#galeria_aside{
+
+	height: 758px;
+	padding-top: 70px;
+	padding-left: 1.5%;
+	margin-top:5px;
+	clear: both;
+	box-sizing: border-box;
+	
+	
+	
+}
+#galeria_aside div{
+	width: 89%;
+	margin:10px 0 0 2%;
+	box-shadow: -5px 5px 5px rgba(0,0,0,0.5);
+	background-color: transparent;
+	box-shadow: none;
+	
+}
+
+#galeria_aside  #scroll-fotos{
+	overflow-x: hidden;
+	overflow-y: scroll;
+	width:100%;
+	height: 600px;
+	margin:0;
+	  
+}
+
+
+#galeria_aside div img{
+	
+	height: 190.7px;
+	box-shadow: -5px 5px 5px rgba(153,131,93,0.3);
+	
+}
+
+#section-galeria img{
+	position: relative;
+	left:10%;
+	width:79%;
+	height:400px;
+	margin:0;
+	border-radius:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

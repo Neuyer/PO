@@ -1,0 +1,102 @@
+#cardapio, #section_mapa{
+	width: 99.23%;
+	height:758px;
+	margin: 5px 0.366%;
+	background-color: black;
+	padding:0;
+}
+#section_mapa{
+	box-sizing: border-box;
+	padding: 0 0 0 10%;
+}
+
+#cardapio article{
+	box-sizing: border-box;
+	padding:15px 1%;
+	height:450px;
+	
+}
+
+#cardapioh2{
+	position: relative;
+	top: 80px;
+	left:3.5%;
+	margin:0;
+	color: white;
+	width: 50%;
+}
+
+#cardapio article div{
+	
+	
+	border-radius: 10px;
+
+		
+}
+
+#cardapio article div:hover{
+	cursor: pointer;
+}
+
+#cardapio article .r-pratos{
+	margin-left:0;
+	margin-right:0;
+
+
+}
+#cardapio article .c-pratos{
+	margin-left: 1.24%;
+	margin-right: 1.24%;
+	
+
+
+}
+
+#cardapio article div img{
+	border-radius:10px 10px 0 0;
+	
+}
+
+#cardapio article div h2{
+	width: 20%;
+	margin: 0 0 0 20%;
+	background-color: transparent;
+	border-radius:0;
+	color: rgba(153,131,93,1);
+	padding:0;
+	
+}
+.coluna{
+	
+	float: left;
+	width: 30.015%;
+	margin:0 0 0 3.7375%;
+}
+
+.pratosL, .pratosC, .pratosR{
+	width:100%;
+	margin-bottom: 20px;
+	background-color: black;
+}
+
+#destaque{
+	display: none;
+	width: 60.3%;
+	height:423px;
+	margin:0 0 0 35.7375%;
+	background-color: white;
+	
+}
+
+#destaque .descricao{
+	margin:0;
+	border-radius: 10px 0 0 10px;
+	padding:10px 20px;
+	background-color: black;
+	box-sizing:border-sizing;
+	height:182px;
+	width: 40%;
+}
+
+
+
