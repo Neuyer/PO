@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="css/responseB.css" rel="stylesheet">
+</head>
+
+<div class="frame">
+  <div class="buttonCase bcp">
+    <div class="button">
+    </div>
+  </div>
+  <div class="buttonCase bcn">
+    <div class="button next">
+    </div>
+  </div>
+  <a id="close" style="position:relative; top:-4rem;left: 1rem;">fechar X</a>
+</div>
+
+<script>
+  $("document").ready(function(){
+    var ind=1;
+
+    $(".bcn").click(function(){
+      if(ind<10){
+      ind++;
+      $(".frame").css("background-image","url(images/"+ind+".jpg)");
+    }});
+
+    $(".bcp").click(function(){
+      if(ind>=2){
+      ind--;
+      $(".frame").css("background-image","url(images/"+ind+".jpg)");
+    }});
+  });
+
+
+</script>
+</body>
+</html>

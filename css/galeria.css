@@ -1,6 +1,7 @@
-	#article_galeria{
-	height: 758px;
-	margin: 5px 0 5px 0.1%;
+	#galeriaSec{
+	height: auto;
+	box-sizing: border-box;
+	text-align: center;
 }
 
 #galeria_aside{
@@ -11,9 +12,10 @@
 	margin-top:5px;
 	clear: both;
 	box-sizing: border-box;
-	
-	
-	
+	display: none;
+
+
+
 }
 #galeria_aside div{
 	width: 89%;
@@ -21,7 +23,7 @@
 	box-shadow: -5px 5px 5px rgba(0,0,0,0.5);
 	background-color: transparent;
 	box-shadow: none;
-	
+
 }
 
 #galeria_aside  #scroll-fotos{
@@ -30,51 +32,86 @@
 	width:100%;
 	height: 600px;
 	margin:0;
-	  
+
 }
 
 
 #galeria_aside div img{
-	
-	height: 190.7px;
-	box-shadow: -5px 5px 5px rgba(153,131,93,0.3);
-	
-}
 
-#section-galeria img{
-	position: relative;
-	left:10%;
-	width:79%;
-	height:400px;
-	margin:0;
+
+	box-shadow: -5px 5px 5px rgba(153,131,93,0.3);
+
+}
+.galeriaArt{
+	height: auto;
+	text-align: center;
+}
+.galeriaArt img{
+	max-width: 100%;
+	max-height: 28.1875rem;
+	height:auto;
 	border-radius:10px;
 }
 
 
+/*css do modal da galeria**/
+.frame{
+    background-image: url("../images/1.jpg");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    top:0;
+    left: 0.1rem;
+    position:fixed;
+    display:none;
+    z-index: 3;
 
+}
+.buttonCase{
+  width: 6rem;
+  height: 6rem;
+  position: static;
+  border-radius: 100%;
+  background-color: rgba(0,0,0,0.7);
+}
 
+.buttonCase:hover{
+  cursor: pointer;
+}
 
+.button{
+        border-width: 2rem;
+        border-color: transparent white transparent transparent;
+        border-style: solid;
+        position: relative;
+        right: 2.4rem;
+        bottom: -1rem;
+}
 
+.next{
+    border-color: transparent transparent transparent white;
+    right: -2.4rem;
+    bottom: -1rem;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.bcp{
+  position: fixed;
+  top: 20rem;
+  left: 2%;
+  float: left;
+}
+.bcn{
+  position: fixed;
+  right:2%;
+  top: 19rem;
+}
+#close{position:fixed;
+   top:1rem;
+   left:1rem;
+   font-size:1rem;
+   background-color: white;
+   width: 7rem;
+ }
+ /*fim modal**/

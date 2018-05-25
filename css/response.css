@@ -1,0 +1,219 @@
+@media screen and (max-width: 1200px) {
+
+
+nav{
+    margin: 95px 0 0 30%;
+    width: 50%;
+    }
+
+.showNav{
+    width: 60%;
+    }
+
+#social{
+      width: 20%;
+
+    }
+
+#clogo, .logo{
+
+
+			width: 100px;
+			height: 100px;
+      background-size: contain;
+
+		}
+#logo{
+      margin-top:30px;
+
+    }
+
+.aFavicon{
+      right: 0.4%;
+}
+
+
+}
+
+@media screen and (max-width: 1063px) {
+nav{
+    margin: 95px 0 0 15%;
+    width:60% ;
+    }
+
+    .aFavicon{
+          right: -2%;
+    }
+
+    .hfavicon{
+			width: 4.9283%;
+    }
+}
+
+@media screen and (max-width: 885px) {
+nav{
+    margin: 95px 0 0 5%;
+    padding: 0;
+    width:68% ;
+    }
+
+.showNav{
+        width: 70%;
+        }
+}
+@media screen and (max-width: 783px) { /** aqui fica pra celular!!!*/
+
+
+.sandwichClosed{
+  width: 3rem;
+  height: 2.5rem;
+  position: fixed;
+  top: 1rem;
+  left: 0.2rem;
+  z-index: 3;
+  border-radius: 0.5rem;
+  background-color: black;
+  display: block;
+  text-align: center;
+  line-height: 0.4rem;
+  padding-top: 0.2rem;
+  font-size: 2rem
+}
+
+.sandwichOpen nav{
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  }
+  .sandwichOpen nav ul{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .sandwichOpen nav ul li{
+  display: block;
+  margin:1rem 0;
+  }
+  .sandwichOpen nav ul li a{
+    font-size: 1rem;
+  }
+.sandwichOpen{
+  position: fixed;
+  top: 0.4rem;
+  left: 0.2rem;
+  z-index: 2;
+  background-color: black;
+}
+nav{
+  display: none;
+  }
+
+
+article{
+  box-sizing: border-box;
+  margin: inherit auto;
+  height: auto;
+  width: 100%;
+}
+
+aside, section{
+  width: 100%;
+  height: auto;
+  min-height: 35.5rem;
+  clear:both;
+}
+
+.aFavicon{
+      display: none;
+}
+
+#clogo{
+      clear:both;
+      margin: 1.56rem auto 0 37%;
+      display: inline-block;
+
+
+      }
+h2{
+  font-size:1.7rem;
+}
+p{
+  font-size:1rem;
+}
+
+#sobre_article{
+  box-sizing: border-box;
+  padding: 5%;
+}
+/**fotos cardapio**/
+
+.a{
+  width: 40%;
+}
+#cardapio article{
+  text-align:center;
+}
+
+#galeria_aside{
+  display: none;
+  }
+#galeriaSec{
+  max-height: 100vh;
+  overflow: auto;
+}
+
+  .bcn{
+    bottom: -10rem;
+  }
+
+
+footer{
+  height:30rem;
+  padding: 0;
+}
+
+
+
+
+footer .vcard{
+  clear: both;
+  width: 50%;
+  display: block;
+  text-align: center;
+  margin:0 auto;
+  /* margin: 0; */
+}
+footer .logo{
+  clear: both;
+  width: 43%;
+  display: block;
+  margin: 5rem 28.5% 2.5rem 28.5% ;
+  /* margin: 0; */
+}
+
+footer #social{
+  width: 30%;
+  display: block;
+  text-align: center;
+  margin: 0 35%;
+  clear: both;
+  /* margin: 0; */
+}
+
+.showNav{
+  background-color: transparent;
+  color: transparent;
+  position: absolute;
+  left: -500px;
+}
+
+@media screen and (max-width: 680px) { /** aqui fica pra celular!!!*/
+  footer #social{
+      margin: 0 25%;
+        width: 50%;
+  }
+
+
+}

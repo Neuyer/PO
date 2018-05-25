@@ -1,0 +1,61 @@
+/* Add to docs */
+
+.frame{
+    background-image: url("../images/1.jpg");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 700px;
+    top:0;
+    left: 0.1rem;
+    position:fixed;
+    display:none;
+    z-index: 3;
+
+}
+.buttonCase{
+  width: 6rem;
+  height: 6rem;
+  position: static;
+  border-radius: 100%;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.buttonCase:hover{
+  cursor: pointer;
+}
+
+.button{
+        border-width: 2rem;
+        border-color: transparent white transparent transparent;
+        border-style: solid;
+        position: relative;
+        right: 2.4rem;
+        bottom: -1rem;
+}
+
+.next{
+    border-color: transparent transparent transparent white;
+    right: -2.4rem;
+    bottom: -1rem;
+}
+
+.bcp{
+  position: relative;
+  top: 20rem;
+  left: 1%;
+  float: left;
+}
+.bcn{
+  position: relative;
+  left:90%;
+  top: 20rem;
+}
+#close{position:fixed;
+   top:1rem;
+   left:1rem;
+   font-size:1rem;
+   background-color: white;
+   width: 7rem;
+ }
