@@ -13,6 +13,7 @@ branco font color: rgb(255,255,253);
 */
 /*animações**/
 @keyframes spin { 100% { -webkit-transform: rotateY(360deg); transform:rotateY(360deg); } }
+@keyframes fadeIn { from {opacity: 0} to {opacity: 100%} }
 body{
   font-size: 100%;
   background-image: url(../images/3.jpg);
@@ -73,19 +74,23 @@ section{
   margin-left: -1em;
   text-align: justify;
   box-sizing: border-box;
+  animation:fadeIn 1s linear 1;
   display: none;
 }
 .sectionHome{
     background-image:  url(../images/bgSectionWelcome.png);
 }
-.sectionHome p{
+.sectionSobre{
+    background-image:  url(../images/bgSectionSobre.png);
+}
+.section p{
   position: relative;
   width: 60%;
   margin-left: 42%;
   padding-top: 2em;
   font-size: 3.5rem;
   font-family: 'Montserrat', sans-serif;
-  display: none;
+
 }
 .sectionHome span{
   text-decoration: underline;
@@ -97,6 +102,14 @@ section{
   margin-left: 0.4rem;
   text-decoration: overline;
 
+}
+
+.sectionSobre p{
+  font-size: 1.5rem;
+  width: 40%;
+  line-height: 2rem;
+  margin-left: 55%;
+  text-align: right;
 }
 nav .logo{
   width: 70%;

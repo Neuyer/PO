@@ -1,11 +1,11 @@
 $(main);
 function main() {
     $("nav li").click(function(){
-      $("nav li").removeClass("liAtiva")
+      $("nav li").removeClass("liAtiva");
       $(this).addClass("liAtiva");
+      var id = $(this).attr('id');
+      var section="section"
+      $("section").slideUp();
+      $("#"+section+id).slideDown();
     });
-    $(document).ready(function(){$("section p").delay(300).fadeIn("slow");});
-    $("#liHome").click(function(){
-      $("#sectionHome").fadeIn("slow");
-    })
 }
