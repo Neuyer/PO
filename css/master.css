@@ -4,6 +4,7 @@
 *{
   margin: 0;
   padding: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /** cores
@@ -12,7 +13,7 @@ marrom logo  rgb(209,167,124);
 branco font color: rgb(255,255,253);
 */
 /*animações**/
-@keyframes spin { 100% { -webkit-transform: rotateY(360deg); transform:rotateY(360deg); } }
+
 @keyframes fadeIn { from {opacity: 0} to {opacity: 100%} }
 body{
   font-size: 100%;
@@ -22,9 +23,7 @@ body{
   background-position: right;
   color: rgb(255,255,220);
 }
-h2{
-  font-family: 'Lobster', cursive;
-}
+button{display: none;}
 header{
   height: 15vh;
   width:87%;
@@ -34,7 +33,7 @@ header{
   float: right;
 }
 
-h1{
+h1, h2{
   text-indent: -3000px;
   width: 0;
   height: 0;
@@ -42,7 +41,6 @@ h1{
 }
 
 header p{
-  font-family: 'Montserrat', sans-serif;
   font-size: 2.5em;
   text-shadow: 2px 4px rgba(0, 0, 0, 0.2);
 }
@@ -74,17 +72,17 @@ section{
   background-size: contain;
   background-position: left;
   background-repeat: no-repeat;
+  background-image:  url(../images/bgHome.png);
   margin-left: -1em;
   text-align: justify;
   box-sizing: border-box;
   animation:fadeIn 1s linear 1;
   display: none;
 }
-.sectionHome{
-    background-image:  url(../images/bgSectionWelcome.png);
-}
-.sectionSobre{
-    background-image:  url(../images/bgSectionSobre.png);
+
+.sectionContato{
+    background-color: #6599dc;
+    width: 102.5%
 }
 section p{
   position: relative;
@@ -92,20 +90,12 @@ section p{
   margin-left: 42%;
   padding-top: 2em;
   font-size: 3.5rem;
-  font-family: 'Montserrat', sans-serif;
-
 }
 .sectionHome span{
   text-decoration: underline;
     text-shadow: 2px 4px rgba(0, 0, 0, 0.1);
 }
-.sectionHome span~span{
-  animation:spin 3s ease-out 1s 1;
-  position: absolute;
-  margin-left: 0.4rem;
-  text-decoration: overline;
 
-}
 
 .sectionSobre p{
   font-size: 1.5rem;
@@ -121,10 +111,35 @@ section p{
   margin-top: 2rem
 }
 .sectionLocalizacao{
-  padding: 2rem 0 0 2rem;
+  padding: 0 0 0 2rem;
+  text-align: left;
+}
+.sectionLocalizacao p{
+  position: inherit;
+  text-align: left;
+  margin: 0;
+  font-size: 2rem;
+  padding-top: 1rem;
 }
 .sectionGaleria{
-  padding: 1.5rem;
+  padding: 0 0 0 1.5rem;
+}
+#instafeed a{
+  margin-right: 0.3rem;
+}
+#instafeed a:hover{
+  filter: sepia();
+}
+
+.sectionContato table{
+  width: 40%;
+  font-size: 1.5em;
+  margin-right: 12rem;
+  margin-top: 6rem;
+  float: right;
+}
+caption{
+  text-align: left;
 }
 nav .logo{
   width: 70%;
@@ -138,22 +153,24 @@ nav .logo{
   margin-top: -0.4em;
 
 }
-.boxSocialLogo{
-  margin-top: 4rem;
+.socialBox{
+  width: 15%;
+  margin-left: 85%;
+  margin-top: 18rem;
+  clear: both;
 }
-.boxSocialLogo:hover{
-  background-color:rgb(209,167,124);
-  width: 105%;
-  box-shadow: 0px 4px rgba(0,0,0,0.3);
+
+.socialBox img{
+  width: 25%;
 }
+
 
 ul{
   list-style: none;
   margin-top: 2em;
 
 }
-li, .boxSocialLogo{
-    font-family: 'Montserrat', sans-serif;
+li{
     text-align: center;
     font-size: 1.3em;
     height: 3.5em;
@@ -177,6 +194,7 @@ a{
 }
 a:hover{
     color: rgb(205,205,205);
+    cursor: pointer;
 }
 
 .logoTq{

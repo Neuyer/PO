@@ -1,0 +1,81 @@
+@media screen and (max-width: 415px) {
+
+  body{
+    background-image: url(../images/mobileBg.png);
+      background-attachment: fixed;
+  }
+
+  header{
+    display: none;
+  }
+
+  nav{
+    position: fixed;
+    top:0;
+    height: 100vh;
+    width: 80%;
+    display: none;
+  }
+
+  .logoTq{
+    position: fixed;
+    width: 40%;
+    left: 55%;
+    top:92vh;
+  }
+
+  .mostra{display: block;}
+
+  main{
+    width: 100%;
+  }
+
+  nav .logo{
+    display: none;
+  }
+
+  button{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    display: block;
+    line-height: 0.4em;
+    margin: 1em;
+    padding: 1em;
+    padding-top: 0.3em;
+    width: 20%;
+  }
+  ul{
+    height: 100vh;
+    margin-top: 5rem;
+    padding: 0;
+    width: 100%;
+  }
+  li{
+      height: 4em;
+      box-sizing: border-box;
+      margin-bottom: 1rem;
+      text-align: center;
+      font-size: 1.3em;
+  }
+  .pGin{
+    display: none;
+  }
+  p{
+    display: none;
+  }
+
+  section:first-child{
+    height: 86vh;
+  }
+  section{
+    background-image: none;
+    display:block;
+    height: 95vh;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid white;
+  }
+
+}
