@@ -6,21 +6,36 @@ function main() {
       var id = $(this).attr('id');
       var section="section"
       $("section").slideUp();
-      $("#"+section+id).css("background-image","url(images/bg"+id+".png)").slideDown();
+      $("#"+section+id).addClass(section+id).slideDown();
     });
 
-  function nav() {                          //funcao q transforma a av em sandwich
+  function nav() {                          //funcao q transforma a nav em sandwich
     if($(window).width()<= 414){
-      $("button").click(function(event) {
+        $("button").click(function(event) {
         $("nav").toggle(function(){$(this).animate({height: "100vh", width:"80%"}, 400)})
       });
-      $("li").click(function(event) {
+        $("li").click(function(event) {
         $("nav").toggle(function(){$(this).animate({height: "100vh", width:"80%"}, 400)})
       });
   }
 }
 
+  var carCount=1;
+  function car(){
+    if(carCount<=5){
+      $(".carrossel").css("background-image","url(images/"+carCount+".jpg)").fadeIn();
+      carCount = carCount+1;
+    }else{
+      carCount=1;
+      $(".carrossel").toggle().css("background-image","url(images/"+carCount+".jpg)");
+    }
+  }
+
+setInterval(car, 3000)
 nav();
+
+
+
     /**var feed = new Instafeed({
         get: "popular",
        clientId: '1368612662'
@@ -34,4 +49,4 @@ nav();
            sortBy: "most-recent"
        });
        userFeed.run();
-}
+}//fim function main

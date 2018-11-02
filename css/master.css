@@ -22,6 +22,7 @@ body{
   background-size: cover;
   background-position: right;
   color: rgb(255,255,220);
+   max-width: 100vw;
 }
 button{display: none;}
 header{
@@ -56,7 +57,9 @@ nav{
   float: left;
   position: absolute;
 }
-
+.logoB{
+  display: none;
+}
 main{
     width: 87%;
     height:85vh;
@@ -72,17 +75,23 @@ section{
   background-size: contain;
   background-position: left;
   background-repeat: no-repeat;
-  background-image:  url(../images/bgHome.png);
   margin-left: -1em;
   text-align: justify;
   box-sizing: border-box;
   animation:fadeIn 1s linear 1;
   display: none;
 }
+.sectionHome{
+  background-image:  url(../images/bgHome.png);
+}
+.sectionSobre{
+  background-image:  url(../images/bgSobre.png);
+}
 
 .sectionContato{
     background-color: #6599dc;
-    width: 102.5%
+    width: 102.5%;
+    background-image: url(../images/bgContato.png);
 }
 section p{
   position: relative;
@@ -93,9 +102,19 @@ section p{
 }
 .sectionHome span{
   text-decoration: underline;
-    text-shadow: 2px 4px rgba(0, 0, 0, 0.1);
+  text-shadow: 2px 4px rgba(0, 0, 0, 0.1);
 }
-
+.carrossel{
+  margin: 3em 2em 0 0;
+  width: 60%;
+  height: 60vh;
+  border: 1px solid white;
+  float: right;
+  background-position: center;
+  background-image: url(../images/1.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
 .sectionSobre p{
   font-size: 1.5rem;
@@ -104,7 +123,13 @@ section p{
   margin-left: 55%;
   text-align: right;
 }
-
+.sectionCardapio{
+  padding-left: 4em;
+}
+.sectionCardapio a{
+  float: left;
+  margin: 2em;
+}
 .sectionLocalizacao iframe{
   width: 100%;
   height: 40vh;

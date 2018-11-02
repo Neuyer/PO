@@ -4,9 +4,17 @@
     background-image: url(../images/mobileBg.png);
       background-attachment: fixed;
   }
+  *{
+    box-sizing: border-box;
+  }
 
   header{
-    display: none;
+    box-sizing: border-box;
+    width: 50%;
+    float: right;
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 2rem;
   }
 
   nav{
@@ -15,13 +23,18 @@
     height: 100vh;
     width: 80%;
     display: none;
+    z-index: 3000;
   }
-
+  .logoB{
+    width: 70%;
+    display: block;
+    margin-left: 2.5em;
+  }
   .logoTq{
     position: fixed;
     width: 40%;
     left: 55%;
-    top:92vh;
+    top:95vh;
   }
 
   .mostra{display: block;}
@@ -40,10 +53,13 @@
     border: 1px solid white;
     display: block;
     line-height: 0.4em;
-    margin: 1em;
+    margin-left: 1em;
+    margin-top: 2em;
     padding: 1em;
     padding-top: 0.3em;
     width: 20%;
+    position: fixed;
+    z-index: 2999;
   }
   ul{
     height: 100vh;
@@ -61,21 +77,85 @@
   .pGin{
     display: none;
   }
-  p{
-    display: none;
-  }
 
-  section:first-child{
-    height: 86vh;
+
+  h2{
+    text-indent: 0;
+    height: 2.7em;
+    width: 100%;
+    padding-top: 0.8em;
+    padding-left: 1.5em;
+    background-color: black;
+    box-sizing: border-box;
+    position: sticky;
   }
-  section{
-    background-image: none;
+  section {
+    background-image: none !important;
     display:block;
-    height: 95vh;
+    height: 80vh;
     margin-top: 1em;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 5rem;
     border: 1px solid white;
+    min-width: 378px;
+  }
+  .sectionHome p{
+    margin: 0;
+    font-size: 3em;
+    text-align: left;
+    width: 90%;
+  }
+  .sectionSobre p{
+    margin: 0;
+    margin-left: 1.5em;
+    width: 80%;
+    text-align: left;
+  }
+  .sectionCardapio{
+    overflow: scroll;
+    padding-left: 0.2em;
+  }
+  .sectionCardapio a{
+    float: left;
+    margin: 0.2em;
+  }
+
+  .sectionGaleria{
+    overflow: scroll;
+    padding: 0;
+  }
+
+  #instafeed{
+    margin-left: 2.2em;
+    margin-top: 1em;
+  }
+
+  .sectionLocalizacao{
+    padding: 0;
+  }
+  .sectionLocalizacao p{
+    display: none;
+  }
+  .sectionLocalizacao iframe{
+    width: 100%;
+    border: none;
+    height: 60vh;
+    margin-top: 2rem
+  }
+
+  .sectionContato{
+    width: 100%;
+  }
+  .sectionContato table{
+    width: 80%;
+    clear: both;
+    margin: 3em 1.5em 0 0;
+  }
+  .socialBox{
+    width: 80%;
+    clear: both;
+    margin: 20em 0 0 7.5em ;
   }
 
 }
