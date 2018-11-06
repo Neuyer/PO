@@ -12,27 +12,32 @@ function main() {
   function nav() {                          //funcao q transforma a nav em sandwich
     if($(window).width()<= 414){
         $("button").click(function(event) {
-        $("nav").toggle(function(){$(this).animate({height: "100vh", width:"80%"}, 400)})
+        $("nav").toggle(function(){$(this).animate({height: "95vh", width:"80%"}, 400)})
       });
         $("li").click(function(event) {
-        $("nav").toggle(function(){$(this).animate({height: "100vh", width:"80%"}, 400)})
+        $("nav").toggle(function(){$(this).animate({height: "0", width:"0"}, 400)})
       });
   }
 }
-
-  var carCount=1;
+  function oculta(){
+    if($(window).width()> 414){
+    $(".sectionContato").css("display", "none")
+  }
+}
+  var carCount=2;
   function car(){
-    if(carCount<=5){
-      $(".carrossel").css("background-image","url(images/"+carCount+".jpg)").fadeIn();
+    if(carCount<6){
+      $(".carrossel").css("background-image","url(images/"+carCount+".png)").fadeIn();
       carCount = carCount+1;
     }else{
       carCount=1;
-      $(".carrossel").toggle().css("background-image","url(images/"+carCount+".jpg)");
+      $(".carrossel").css("background-image","url(images/"+carCount+".png)");
     }
   }
 
-setInterval(car, 3000)
+setInterval(car, 2000);
 nav();
+oculta();
 
 
 

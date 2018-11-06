@@ -1,5 +1,4 @@
 @media screen and (max-width: 415px) {
-
   body{
     background-image: url(../images/mobileBg.png);
       background-attachment: fixed;
@@ -25,19 +24,6 @@
     display: none;
     z-index: 3000;
   }
-  .logoB{
-    width: 70%;
-    display: block;
-    margin-left: 2.5em;
-  }
-  .logoTq{
-    position: fixed;
-    width: 40%;
-    left: 55%;
-    top:95vh;
-  }
-
-  .mostra{display: block;}
 
   main{
     width: 100%;
@@ -74,10 +60,6 @@
       text-align: center;
       font-size: 1.3em;
   }
-  .pGin{
-    display: none;
-  }
-
 
   h2{
     text-indent: 0;
@@ -99,12 +81,44 @@
     margin-bottom: 5rem;
     border: 1px solid white;
     min-width: 378px;
+    width: 90%;
   }
+
+  /**Classes*/
+
+  .logoB{
+    width: 70%;
+    display: block;
+    margin-left: 2.5em;
+  }
+  .logoTq{
+    display: none;
+  }
+
+  .mostra{display: block;}
+
+  .pGin{
+    display: none;
+  }
+
   .sectionHome p{
     margin: 0;
     font-size: 3em;
     text-align: left;
     width: 90%;
+  }
+
+  .sectionHome .pGin{
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+  }
+  .carrossel{
+    background-size: contain;
+    margin: 0;
+    width: 100%;
+
   }
   .sectionSobre p{
     margin: 0;
